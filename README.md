@@ -301,7 +301,27 @@ When a new patient arrives, the new severity score can be inserted in **O(log n)
 Therefore, repeatedly sorting the complete list using Heap Sort or Quick Sort is unnecessary for a dynamic priority queue.
 
 ---
+### File descriptions
 
+**patient_priority_assignment.c**  
+Contains the C implementation of Max Heap insertion, Heap Sort and Quick Sort.
+
+**input.txt**  
+Contains the given patient severity scores.
+
+**output.txt**  
+Contains the execution output of the C program.
+
+**trace_table.txt**  
+Contains important intermediate steps of heap insertion and sorting.
+
+**comparison.txt**  
+Contains complexity and performance comparisons.
+
+**README.md**  
+Contains the complete description of the problem, algorithms, results, complexity analysis and conclusion.
+
+---
 ## 13. Final Conclusion
 
 For a hospital that continuously receives patients and needs to attend to the most severe patient first, a **Max Heap Priority Queue** is the appropriate data structure.
@@ -333,6 +353,33 @@ The final Max Heap for the priority queue is:
 ```text
 90 72 85 45 65 30 50
 ```
+
+---
+## 15. How to Compile and Run
+
+### Using GCC
+
+Open a terminal in the project directory and run:
+
+```bash
+gcc patient_priority_assignment.c -o patient_priority_assignment
+```
+
+Then run:
+
+### Windows
+
+```powershell
+.\patient_priority_assignment.exe
+```
+
+### Linux/macOS
+
+```bash
+./patient_priority_assignment
+```
+
+The program displays the Max Heap insertion steps, Heap Sort steps, Quick Sort partition steps and final results.
 
 ---
 
